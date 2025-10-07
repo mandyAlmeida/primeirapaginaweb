@@ -16,8 +16,8 @@ class ComponentLoader {
   async loadAllComponents() {
     // Carregamento do nav e footer em todas as páginas
     await Promise.all([
-      this.loadComponent('#nav-container', '../components/nav.html'),
-      this.loadComponent('#footer-container', '../components/footer.html')
+      this.loadComponent('#nav-container', './components/nav.html'),
+      this.loadComponent('#footer-container', './components/footer.html')
     ]);
   }
 }
